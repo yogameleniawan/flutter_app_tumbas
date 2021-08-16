@@ -43,19 +43,20 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(
           title: Padding(
-            padding: const EdgeInsets.only(left: 100),
+            padding: const EdgeInsets.only(left: 115),
             child: Row(
               children: <Widget>[
                 Icon(
-                  Icons.location_on_outlined,
+                  Icons.account_box_sharp,
                   color: Color(0xFFFF6E4E),
                   size: 14,
                 ),
-                Text(" Malang, Indonesia",
+                Text(" Hello, User!",
                     style: TextStyle(fontSize: 14, color: Colors.black)),
               ],
             ),
           ),
+          centerTitle: true,
           backgroundColor: Colors.transparent,
           elevation: 0.0,
           actions: <Widget>[
@@ -273,7 +274,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20),
+                      padding: const EdgeInsets.only(top: 20, bottom: 10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -293,6 +294,61 @@ class _HomePageState extends State<HomePage> {
                               )),
                         ],
                       ),
+                    ),
+                    Stack(
+                      children: [
+                        Container(
+                          width: 400,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage("images/banner.png")),
+                            // borderRadius:
+                            //     BorderRadius.all(Radius.circular(16.0)),
+                          ),
+                        ),
+                        Padding(
+                            padding: const EdgeInsets.only(top: 20, left: 20),
+                            child: CircleAvatar(
+                              backgroundColor: Color(0xFFFF6E4E),
+                              child: Text(
+                                "New",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 12),
+                              ),
+                            )),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 80, left: 20),
+                          child: Text("Iphone 12",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 25)),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 115, left: 20),
+                          child: Text("Súper. Mega. Rápido.",
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 11)),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 145, left: 20),
+                          child: Container(
+                              decoration: BoxDecoration(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8)),
+                                  color: Colors.white),
+                              child: Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 6, bottom: 6, left: 20, right: 20),
+                                child: Text(
+                                  "Buy now!",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                              )),
+                        ),
+                      ],
                     ),
                   ],
                 ),
