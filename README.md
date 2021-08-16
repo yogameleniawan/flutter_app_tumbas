@@ -2,6 +2,15 @@
 
 A new Flutter project.
 
+# Install 
+
+1. npm install
+2. flutter pub get
+
+## Design UI/UX
+
+<a href="https://www.figma.com/file/KqZcU5m3GMxAHwgFkvCONz/ECOMMERCE?node-id=0%3A1" target="_blank">Design UI/UX on Figma</a>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
